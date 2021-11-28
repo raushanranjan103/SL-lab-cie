@@ -1,0 +1,24 @@
+
+<html >
+<head>
+    <title>List of food items</title>
+</head>
+<body>
+    <form>
+        <h3>Choose which food do you wanted to prefer in dinner</h3>
+        <select id="food" onchange="selectFood()">
+            <option value="Pizza">Pizza</option>
+            <option value="Paneer">Paneer</option>
+            <option value="Rice">Rice</option>
+        </select>
+    </form>
+    <script>
+        function selectFood()
+        {
+            var choice=document.forms[0].food.value;
+            alert("Your choice is "+choice);
+        }
+    </script>
+    
+</body>
+</html>
