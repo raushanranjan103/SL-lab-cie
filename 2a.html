@@ -1,0 +1,31 @@
+
+<html >
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript addEventListner()</h2>
+    <p> This example uses the addEventListner() method to add ny event on the same button</p>
+    <button id="mybtn">Click it</button>
+   <p id="demo">hi</p> 
+    <script>
+    var x=document.getElementById("mybtn");
+    x.addEventListener("mouseover",f1);
+    x.addEventListener("mouseout",f2);
+    function f1()
+    {document.getElementById("demo").innerHTML +="Mouse over!<br>";
+    
+    }
+
+    function f2()
+    {
+        document.getElementById("demo").innerHTML +="Mouse out <br>!";
+        
+    }
+</script>
+
+
+    
+</body>
+</html>
