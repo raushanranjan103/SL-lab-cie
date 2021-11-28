@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html >
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <p>Green when focused in text box and when moved from the text box background becomes blue</p>
+    <br>
+     Enter your name:<input type="text" id="bttn" onfocus="f1()" onblur="f2()">
+<script>
+    function f1(){
+        document.getElementById("bttn").style.backgroundColor="green";
+
+    }
+    function f2(){
+        document.getElementById("bttn").style.backgroundColor="blue";
+
+    }
+
+</script>
+
+
+    
+</body>
+</html>
