@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Check the divisibilty of a number</h1>
+  <form>
+ Enter the number:<input type="text" id="num"/><br>
+</form>
+ <button onclick="f1()">Divisibility by 3 or 7</button>
+ <h5>The Result is: <br></h5>
+ <span id="result"></p>
+ <script>
+     function f1()
+     {
+         x=document.getElementById("num").value;
+         if(x%3==0||x%7==0)
+         {
+             document.getElementById("result").innerHTML=true;
+
+         }
+         else{
+             document.getElementById("result").innerHTML=false;
+
+         }
+     }
+
+ </script>
+
+    
+</body>
+</html>
