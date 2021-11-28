@@ -1,0 +1,33 @@
+
+<html></html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form id="f1">
+    First name:<input type="text" name="fname"value="Raushan"><br>
+    Last name:<input type="text" name="lname"value="Ranjan"><br>
+    <br>
+    </form>
+    
+<p>Click "Try it" to display the value of each element in the form.</p>
+<button onclick="f1()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function f1() {
+    var x = document.getElementById("f1");
+    var text = "";
+    var i;
+    for (i = 0; i < x.length ;i++) {
+        text += x.elements[i].value + "<br>";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+
+    
+</body>
+</html>
